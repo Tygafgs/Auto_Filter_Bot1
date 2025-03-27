@@ -8,7 +8,6 @@ from imdb import Cinemagoer
 
 
 ia = Cinemagoer()
-LONG_IMDB_DESCRIPTION = False
 
 def list_to_str(lst):
     if lst:

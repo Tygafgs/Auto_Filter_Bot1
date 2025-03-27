@@ -132,12 +132,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
     else:
         date = "N/A"
     plot = ""
-    if not LONG_IMDB_DESCRIPTION:
-        plot = movie.get('plot')
-        if plot and len(plot) > 0:
-            plot = plot[0]
-    else:
-        plot = movie.get('plot outline')
+    plot = movie.get('plot outline')
     if plot and len(plot) > 800:
         plot = plot[0:800] + "..."
 
